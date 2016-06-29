@@ -32,8 +32,19 @@ describe('Commandable', function() {
         .option('debug', 'Debug output')
         .command('myapp', done.bind(null, null));
 
-      noptify(args).command('init', init).parse();
+      var update = noptify(args)
+        .option('debug', 'Debug output')
+        .command('yourapp', done.bind(null, null));
+
+      var program = noptify(args)
+        .command('init', init)
+        .command('update', update)
+
+      program.parse();
     });
+
+    it('needs the last test to assert something');
+    it('needs run() coverage');
   });
 
 
