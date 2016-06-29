@@ -49,8 +49,8 @@ function Noptify(args, options) {
   this._steps = [];
   this.nopt = {};
 
-  this.option('help', '-h', 'Show help usage');
-  this.option('version', '-v', 'Show package version');
+  this.option('help', '-h', 'Show help usage', Boolean);
+  this.option('version', '-v', 'Show package version', Boolean);
 }
 
 util.inherits(Noptify, events.EventEmitter);

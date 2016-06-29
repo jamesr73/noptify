@@ -8,7 +8,7 @@
     "url": "git://github.com/mklabs/noptify.git"
   },
   "dependencies": {
-    "nopt": "~2.0.0"
+    "nopt": "^3.0.6"
   },
   "devDependencies": {
     "istanbul": "^0.4.4",
