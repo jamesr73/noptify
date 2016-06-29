@@ -11,8 +11,8 @@
     "nopt": "~2.0.0"
   },
   "devDependencies": {
-    "mocha": "~1.8.1",
     "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
     "sinon": "^1.17.4"
   },
   "scripts": {
