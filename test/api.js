@@ -38,7 +38,7 @@ describe('API', function() {
         .parse();
 
       assert.equal(opts.lonely, 'option');
-      assert.equal(opts.single, 'true'); // TODO: confirm behaviour
+      assert.equal(opts.single, '');
     });
 
     it('supports .option(name, description)', function() {
@@ -48,7 +48,7 @@ describe('API', function() {
         .parse();
 
       assert.equal(opts.lonely, 'option');
-      assert.equal(opts.single, 'true'); // TODO: confirm behaviour
+      assert.equal(opts.single, '');
     });
 
     it('supports .option(name, description, type)', function() {
@@ -68,7 +68,7 @@ describe('API', function() {
         .parse();
 
       assert.equal(opts.lonely, 'option');
-      assert.equal(opts.single, 'true'); // TODO: confirm behaviour
+      assert.equal(opts.single, '');
     });
 
     it('supports .option(name, shorthand, description, type)', function() {
